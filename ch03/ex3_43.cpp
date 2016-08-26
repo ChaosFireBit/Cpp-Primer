@@ -16,13 +16,13 @@ int main()
     cout << endl;
 
     // for loop
-    for (size_t i = 0; i != 3; ++i)
-        for (size_t j = 0; j != 4; ++j) cout << arr[i][j] << " ";
+    for (size_t i = 0; i != 2; ++i)
+        for (size_t j = 0; j != 3; ++j) cout << arr[i][j] << " ";
     cout << endl;
 
     // using pointers.
-    for (int(*row)[4] = arr; row != arr + 3; ++row)
-        for (int *col = *row; col != *row + 4; ++col) cout << *col << " ";
+    for (int(*row)[4] = arr; row != arr + 2; ++row)
+        for (int *col = *row; col != *row + 3; ++col) cout << *col << " ";
     cout << endl;
 
     return 0;
